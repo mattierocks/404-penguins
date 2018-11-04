@@ -1,0 +1,74 @@
+/********************** FONTS **********************/
+@font-face {
+  font-family: 'Eurostyle';
+  src: url('../fonts/Eurostile-Regular.ttf');
+}
+/********************** VARIABLES **********************/
+/********************** GENERAL RESET **********************/
+html,
+body {
+  background: #313f4c;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+}
+/********************** MAIN STYLE **********************/
+.container .header {
+  margin: 10px;
+}
+.container .header h1 {
+  font-size: 45px;
+  color: #1ca9f9;
+  margin-bottom: 10px;
+}
+.container .header p {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Eurostyle';
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+.container .header a {
+  background: #1ca9f9;
+  color: #ffffff;
+  font-family: 'Eurostyle';
+  padding: 12px 18px;
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+.container .header a:hover {
+  background-color: #056eaa;
+}
+.container img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.container #snow {
+  background-image: url(../../img/snow.png);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: snow 13s linear infinite;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px;
+  }
+  50% {
+    background-position: 500px 500px;
+  }
+  100% {
+    background-position: 500px 1000px;
+  }
+}
